@@ -5,7 +5,7 @@ public class InputApp {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("What do you want to do (add, subtract) ? ");
+        System.out.print("Would you like to add or subtract? ");
 
         String command = scanner.nextLine();
         if (command.equals("add")) {
@@ -15,6 +15,10 @@ public class InputApp {
         } else {
             System.out.printf("%s -- Invalid command!", command);
         }
+
+        //added .close();
+        scanner.close();
+
 
     }
 
@@ -42,5 +46,10 @@ public class InputApp {
         double difference = num1 - num2;
         System.out.printf("%f - %f = %f", num1, num2, difference);
 
+
+
     }
-} 
+
+
+}
+
