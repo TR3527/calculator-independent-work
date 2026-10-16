@@ -1,5 +1,5 @@
 import java.util.*;
-
+//make changes to example
 public class InputApp {
 
     public static void main(String[] args) {
